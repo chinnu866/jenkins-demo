@@ -1,5 +1,6 @@
-FROM openjdk:17
-COPY . /app
+FROM eclipse-temurin:17
 WORKDIR /app
-CMD ["java","-version"]
+COPY . .
+CMD ["java", "-version"]
+
 
